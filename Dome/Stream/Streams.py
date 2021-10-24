@@ -20,26 +20,12 @@ class StreamLive(object):
         frame_flip = cv2.flip(frame,1)
         frame = cv2.resize(frame, (640, 480))
         encoded, buffer = cv2.imencode('.jpg', frame)
-        jgg_to_string = base64.b64encode(buffer)
-        return footage.send(jpg_to_string)
+        return buffer.tobytes()
         
     def update_frame(self):
         while(True):
             (self.grabbed, self.frame) = self.video.read()
             
-            
- 
-
-class classroom(object):
-	def __init__(self):
-		pass
-
-	def __del__(self):
-		cv2.destroyAllWindows()
-
-	def get_frame(self):
-	    frame = 0
-		img = base64.b64decode(frame)
 		
 		
 def gen(camera):
