@@ -1,7 +1,7 @@
 # dome
 Department Of Mechatronics Engineering
 
-This projectvis an implementation of Django web framework with the integration of OpenCV version 4.
+These project is an implementation of Django web framework with the integration of OpenCV version 4.
 
 The project was initialized to solve the realtime live streaming in class.
 
