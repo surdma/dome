@@ -14,10 +14,3 @@ def Home(request):
         pass
 
     return render(request, "index.html")
-    
-    
-					
-@gzip.gzip_page  
-def class_room(request):
-    return StreamingHttpResponse(gen(classroom()),
-					content_type='multipart/x-mixed-replace; boundary=frame')
